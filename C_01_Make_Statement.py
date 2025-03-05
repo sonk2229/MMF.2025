@@ -34,8 +34,32 @@ def string_check(question, valid_answers=('yes', 'no'),
         print(f"Please choose an option from {valid_answers}")
 
 
+def instructions():
+    make_statement("Instructions", "❕")
+
+    print('''
+    
+For each ticket holder enter ...
+- Their name
+- Their age
+- The payment method (cash / credit)
+
+The program will record the ticket sale and calculate the 
+ticket cost (and the profit).
+
+Once you have either sold all of the tickets or entered the 
+exit code ('xxx'), the program will display the ticket
+sales information and write the data tom a text file.
+
+It will also choose one lucky ticket holder who wins the
+ draw (their ticket is free).
+ 
+    ''')
+
 # Main routine goes here
 # payment_ans = ['cash', 'credit']
+
+
 while True:
     want_instructions = string_check("Do you want to see the instructions? ")
     print(f"You chose {want_instructions}")
