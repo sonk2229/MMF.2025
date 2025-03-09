@@ -57,7 +57,7 @@ It will also choose one lucky ticket holder who wins the
     ''')
 
 # Main routine goes here
-# payment_ans = ['cash', 'credit']
+payment_ans = ['cash', 'credit']
 
 
 while True:
@@ -66,5 +66,5 @@ while True:
     print()
 
 
-# pay_method = string_check("Payment method: ", payment_ans, 2)
-# print(f"You chose {pay_method}")
+pay_method = string_check("Payment method: ", payment_ans, 2)
+print(f"You chose {pay_method}")
