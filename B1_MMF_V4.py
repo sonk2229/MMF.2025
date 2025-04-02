@@ -261,3 +261,14 @@ to_write = [heading_string, "\n",
 print()
 for item in to_write:
     print(item)
+
+# create file to hold data (add .txt extension
+file_name = "MMF_ticket_details"
+write_to = "{}.txt".format(file_name)
+
+text_file = open(write_to, "w+")
+
+# write the item to file
+for item in to_write:
+    text_file.write(item)
+    text_file.write("\n")
